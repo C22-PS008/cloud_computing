@@ -1,14 +1,33 @@
 {
-  "name": "backend",
+  "name": "login-jwt",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "��#\u0000 \u0000l\u0000o\u0000g\u0000i\u0000n\u0000-\u0000j\u0000w\u0000t\u0000\r\u0000 \u0000",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvlannasik/login-jwt.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nvlannasik/login-jwt/issues"
+  },
+  "homepage": "https://github.com/nvlannasik/login-jwt#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "flatted": "^3.2.5",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.4",
+    "mongoose-auto-increment": "^5.0.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.16"
   }
 }
