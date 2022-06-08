@@ -1,10 +1,10 @@
-const router = require("express").Router();
-const Article = require("../models/Article");
-const authenticateJWT = require("./verifyToken");
-require("dotenv").config();
+const router = require('express').Router();
+const Article = require('../models/Article');
+const authenticateJWT = require('./verifyToken');
+require('dotenv').config();
 
 //POST article [DONE]
-router.post("/article", (req, res) => {
+router.post('/article', (req, res) => {
   const content = new Article({
     title: req.body.title,
     content: req.body.content,
@@ -12,7 +12,7 @@ router.post("/article", (req, res) => {
     imageUrl: req.body.imageUrl,
   });
   const result = {
-    message: "Article created successfully",
+    message: 'Article berhasil ditambahkan',
     data: {
       title: content.title,
       content: content.content,
@@ -29,14 +29,14 @@ router.post("/article", (req, res) => {
 });
 
 //GET ALL with auth [DONE]
-router.get("/article", authenticateJWT, (req, res) => {
+router.get('/article', authenticateJWT, (req, res) => {
   const article = Article.find({}, function (err, articles) {
     if (err) {
-      res.status(404).send("No articles found");
+      res.status(404).send('Tidak dapat mengambil data');
     } else {
       res.status(200).json({
-        status: "success",
-        message: "Article retrieved successfully",
+        status: 'success',
+        message: 'Artikel berhasil ditampilkan',
         data: {
           articles,
         },
@@ -46,14 +46,14 @@ router.get("/article", authenticateJWT, (req, res) => {
 });
 
 //GET ARTICLE ID [DONE]
-router.get("/article/:id", authenticateJWT, (req, res) => {
+router.get('/article/:id', authenticateJWT, (req, res) => {
   const article = Article.findById(req.params.id, function (err, articles) {
     if (err) {
-      res.status(404).send("The article with the given ID was not found.");
+      res.status(404).send('Tidak dapat mengambil data');
     } else {
       res.status(200).json({
-        status: "success",
-        message: "Article retrieved successfully",
+        status: 'success',
+        message: 'Artikel berhasil ditampilkan',
         data: {
           articles,
         },
