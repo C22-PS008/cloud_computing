@@ -29,6 +29,6 @@ db.once('open', () => {
 });
 
 //listening port
-app.listen(process.env.port, () => {
+app.listen(3000, () => {
   console.log('Server Berhasil Terhubung');
 });
