@@ -57,6 +57,8 @@ The image below shows that the backend service has been deployed. Use the URL li
 
 ## Related
 
-Here for documentation for Endpoint API
+Here for documentation the Endpoint API and Test API
 
 [API Spesification](https://github.com/C22-PS008/cloud_computing/blob/main/backend/README.md)
+
+[POSTMAN API Client](https://documenter.getpostman.com/view/18595486/Uz5MGEoZ)
