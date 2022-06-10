@@ -63,4 +63,4 @@ Here for documentation the Endpoint API and Test API
 
 [POSTMAN API Client](https://documenter.getpostman.com/view/18595486/Uz5MGEoZ)
 
-[PERFORMANCE TESTING] (./testing/Executive Summary - TEST API CAPSTONE PROJECT.pdf)
+[PERFORMANCE TESTING](https://github.com/C22-PS008/cloud_computing/blob/main/deployment/testing/Executive%20Summary%20-%20TEST%20API%20CAPSTONE%20PROJECT.pdf)
